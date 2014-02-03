@@ -81,7 +81,7 @@ To package your box:
 
 ``` bash
 VBoxManage list vms
-vagrant package --base build_box_TIMESTAMP --output name_of_my_box.box`
+vagrant package --base build_box_TIMESTAMP --output name_of_my_box.box
 ```
 
 build_box_TIMESTAMP should be replaced by the ID given by the `VBoxManage list vms` command.
