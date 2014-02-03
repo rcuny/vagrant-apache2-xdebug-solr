@@ -1,7 +1,16 @@
 # Vagrant dev box for Drupal: Apache2 + Solr + Xdebug
 
-## Author
-[Renaud CUNY](http://renaud-cuny.com)
+## What is this for?
+This repo contains Vagrant provisionning script to setup a base virtual machine with the following components:
+
+* Ubuntu 12.04 LTS
+* apache2 + mysql 5.5.x + PHP 5.3.x
+* Apache/Lucene SOLR 4.x
+* phpMyAdmin
+* Xdebug
+
+The aim is to build this base machine once, then re-use it to make it project-specific (ex: Drupal will require some small changes to the Solr conf).
+
 
 ## Sources
 
@@ -83,7 +92,12 @@ Upload your box to a remote location, then in your next Drupal project, use the 
 vagrant.vm.box_url = "http://mywebsite.com/name_of_my_box.box"
 ```
 
+
 ## Additional resources
 
 * [Vagrant docs](http://docs.vagrantup.com/)
+
+
+## Author
+[Renaud CUNY](http://renaud-cuny.com)
 
