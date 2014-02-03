@@ -31,9 +31,7 @@ Install Apache Solr provisionning is based on article from [Tomasz Muras](https:
 * [Vagrant](http://downloads.vagrantup.com/)
 
 
-### Note to Linux & Windows users
-
-#### Windows
+### Note to Windows users
 
 NFS will not work on Windows. Keep it disabled in Vagrantfile.
 
@@ -88,4 +86,4 @@ vagrant.vm.box_url = "http://mywebsite.com/name_of_my_box.box"
 ## Additional resources
 
 * [Vagrant docs](http://docs.vagrantup.com/)
-* [Drupal test repo](https://github.com/sjugge/DCL13_Drupal)
+
