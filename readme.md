@@ -1,4 +1,4 @@
-# Vagrant dev box for Drupal: Apache2 + Solr + Xdebug
+# Vagrant dev box for PHP: Apache2 + Solr + Xdebug
 
 ## What is this for?
 This repo contains Vagrant provisionning script to setup a base virtual machine with the following components:
