@@ -1,0 +1,6 @@
+# ignore .vagrant stuff
+.vagrant*
+
+# ignore content of /logs and /www folder
+www/*
+logs/*
