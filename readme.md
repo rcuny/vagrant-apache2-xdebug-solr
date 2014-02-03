@@ -1,15 +1,24 @@
 # Vagrant dev box for PHP: Apache2 + Solr + Xdebug
 
-## What is this for?
+## What is in the box
 This repo contains Vagrant provisionning script to setup a base virtual machine with the following components:
 
 * Ubuntu 12.04 LTS
 * apache2 + mysql 5.5.x + PHP 5.3.x
-* Apache/Lucene SOLR 4.x
 * phpMyAdmin
-* Xdebug
+* [Apache/Lucene Solr 4.x](http://lucene.apache.org/solr/)
+* [Xdebug](http://xdebug.org)
+* [Drush](https://github.com/drush-ops/drush)
 
 The aim is to build this base machine once, then re-use it to make it project-specific (ex: Drupal will require some small changes to the Solr conf).
+
+
+## Important note on security
+
+This repo is for demonstration purposes only and contains some passwords. 
+It's stronlgy recommended to not use the resources 'as is' for production or even development environments.
+
+Also know that for developer convenience, some default PHP variable (ex: max memory) have been modified. These modifications may not be suitable for production. See provision.sh for details.
 
 
 ## Sources
