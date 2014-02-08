@@ -1,7 +1,7 @@
 # Vagrant dev box for PHP: Apache2 + Solr + Xdebug
 
 ## Companion repository
-This repository is part of a 2 repositories project Vagrant project:
+This repository is part of a 2 repositories Vagrant project:
 
 * **[This repo](https://github.com/rcuny/vagrant-apache2-xdebug-solr), aim at provisionning your box once.**
 * *[A second repo](https://github.com/rcuny/vagrant-drupal-xdebug-solr), using the first one to build a Drupal customized box.*
