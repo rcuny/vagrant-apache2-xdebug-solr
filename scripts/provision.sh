@@ -30,9 +30,6 @@ LOCALE_CODESET="en_US.UTF-8"
 # Timezone
 TIMEZONE="Europe/Paris" # can be altered to your specific timezone, see http://manpages.ubuntu.com/manpages/jaunty/man3/DateTime::TimeZone::Catalog.3pm.html
 
-# Drush
-DRUSH_VERSION="6.2.0" # prefered Drush release from https://github.com/drush-ops/drush/releases
-
 # Apache Solr
 SOLR_VERSION="4.6.1"
 SOLR_MIRROR="http://xenia.sote.hu/ftp/mirrors/www.apache.org"
@@ -160,14 +157,6 @@ sudo sed -i "s@XDEBUG_PATH@$XDEBUG_PATH@g" /tmp/xdebug.ini
 sudo sed -i "s@$VM_ID_ADDRESS@$VM_ID_ADDRESS@g" /tmp/xdebug.ini
 sudo cat /tmp/xdebug.ini >> /etc/php5/apache2/php.ini
 sudo service apache2 restart # restart apache so latest php config is picked up
-
-# Install Drush
-echo "[vagrant provisioning] Installing drush..."
-sudo wget -q https://github.com/drush-ops/drush/archive/$DRUSH_VERSION.tar.gz # download drush from github
-sudo tar -C /opt/ -xzf $DRUSH_VERSION.tar.gz # untar drush in /opt
-sudo chown -R vagrant:vagrant /opt/drush-$DRUSH_VERSION # ensure the vagrant user has sufficiënt rights
-sudo ln -s /opt/drush-$DRUSH_VERSION/drush /usr/sbin/drush # add drush to /usr/sbin
-sudo rm -rf /home/vagrant/$DRUSH_VERSION.tar.gz # remove the downloaded tarbal
 
 # # Install xhprof
 # echo "[vagrant provisioning] Installing xhprof..."

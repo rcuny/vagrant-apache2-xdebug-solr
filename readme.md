@@ -8,7 +8,6 @@ This repo contains Vagrant provisionning script to setup a base virtual machine 
 * phpMyAdmin
 * [Apache/Lucene Solr 4.x](http://lucene.apache.org/solr/)
 * [Xdebug](http://xdebug.org)
-* [Drush](https://github.com/drush-ops/drush)
 
 The aim is to build this base machine once, then re-use it to make it project-specific (ex: Drupal will require some small changes to the Solr conf).
 

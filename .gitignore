@@ -4,3 +4,6 @@
 # ignore content of /logs and /www folder
 www/*
 logs/*
+
+# OSX
+.DS_Store
