@@ -132,7 +132,7 @@ sudo apt-get install -y unzip # unzip .zip files from cli
 sudo apt-get install -y vim # Vim, since only the vim-tidy package is installed
 apt-get install -y tree # Tree, to show directory structure
 
-# Install Pear and usefull libraries for Drupal
+# Install Pear and usefull libraries
 echo "[vagrant provisioning] Installing Pear and libs..."
 sudo apt-get install -y php-pear # Installing Pear - http://pear.php.net
 pear update-channels # Update package lists
