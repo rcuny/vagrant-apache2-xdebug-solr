@@ -6,7 +6,8 @@ This repository is part of a 2 repositories Vagrant project:
 * **[This repo](https://github.com/rcuny/vagrant-apache2-xdebug-solr), aim at provisionning your box once.**
 * *[A second repo](https://github.com/rcuny/vagrant-drupal-xdebug-solr), using the first one to build a Drupal customized box.*
 
-## What is in the box
+
+## What is in this box
 This repo contains Vagrant provisionning script to setup a base virtual machine with the following components:
 
 * Ubuntu 12.04 LTS

@@ -192,10 +192,11 @@ sudo /etc/init.d/tomcat7 restart
 
 ##### CONFIGURATION #####
 
-# Make MySQL server listen to all connection
-echo "[vagrant provisioning] Configuring MySQL..."
-sudo sed -i "s@bind-address            = 127.0.0.1@bind-address            = 0.0.0.0@g" /etc/mysql/my.cnf
-sudo /etc/init.d/mysql restart
+# Make MySQL server listen to all connection - thanks to mdurao on https://laracasts.com/forum/215-vagrant-mysql/0
+sudo sed -i "s/bind-address.*=.*/bind-address=0.0.0.0/" /etc/mysql/my.cnf
+MYSQLGRANT="GRANT ALL ON *.* to root@'%' IDENTIFIED BY 'root'; FLUSH PRIVILEGES;"
+mysql -u root -proot mysql -e "${MYSQLGRANT}"
+sudo service mysql restart
 
 echo "[vagrant provisioning] Configuring vagrant box..."
 usermod -a -G vagrant www-data # adds vagrant user to www-data group
