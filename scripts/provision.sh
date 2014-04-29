@@ -31,7 +31,7 @@ LOCALE_CODESET="en_US.UTF-8"
 TIMEZONE="Europe/Paris" # can be altered to your specific timezone, see http://manpages.ubuntu.com/manpages/jaunty/man3/DateTime::TimeZone::Catalog.3pm.html
 
 # Apache Solr
-SOLR_VERSION="4.6.1"
+SOLR_VERSION="4.7.2"
 SOLR_MIRROR="http://xenia.sote.hu/ftp/mirrors/www.apache.org"
 
 # Xdebug
